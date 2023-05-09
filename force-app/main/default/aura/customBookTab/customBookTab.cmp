@@ -1,0 +1,5 @@
+<aura:component  implements="force:appHostable">
+    <lightning:card>
+        <c:lwcComponent/>
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="File Preview And Downloads"></lightning-card>
+    <template for:each={filesList} for:item="file">
+        <div key={file.value} class="slds-box">
+            <div class="slds-col slds-large-size_4-of-12 slds-medium-size_4-of-12 slds-size_12-of-12">
+                <P><strong>FieldName</strong> {file.label}</P>
+            </div>
+            <div class="slds-col slds-large-size_4-of-12 slds-medium-size_4-of-12 slds-size_12-of-12">
+                <a href={file.url} download> Download </a>
+            </div>
+            <div class="slds-col slds-large-size_4-of-12 slds-medium-size_4-of-12 slds-size_12-of-12">
+                <lightning-button label="Preview"
+                variant="brand"
+                data-id={file.value}
+                onclick={previewHandler}>
+             </lightning-button>
+            </div>
+
+        </div>
+    </template>
+</template>

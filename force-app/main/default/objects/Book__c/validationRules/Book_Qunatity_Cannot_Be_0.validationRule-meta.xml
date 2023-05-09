@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Book_Qunatity_Cannot_Be_0</fullName>
+    <active>true</active>
+    <errorConditionFormula>Book_Quantity__c &lt;= 0</errorConditionFormula>
+    <errorDisplayField>Book_Quantity__c</errorDisplayField>
+    <errorMessage>Book quantity should be more than 0.</errorMessage>
+</ValidationRule>

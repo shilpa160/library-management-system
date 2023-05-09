@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldOverrides>
+        <field>Approval_Status__c</field>
+        <literalValue>Pending</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Borrowed_Date__c</field>
+        <formula>TODAY()</formula>
+    </fieldOverrides>
+    <label>Borrow Book</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns/>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <successMessage>Your request is submitted for approval.</successMessage>
+    <targetObject>Item_Borrowed__c</targetObject>
+    <targetParentField>Item_Borrowed_Field__c</targetParentField>
+    <type>Create</type>
+</QuickAction>

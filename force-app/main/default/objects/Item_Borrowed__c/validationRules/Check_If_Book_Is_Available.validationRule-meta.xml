@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_If_Book_Is_Available</fullName>
+    <active>false</active>
+    <errorConditionFormula>Item_Borrowed_Field__r.Book_Quantity__c ==0</errorConditionFormula>
+    <errorDisplayField>Item_Borrowed_Field__c</errorDisplayField>
+    <errorMessage>The book you have selected to issue is currently not available.</errorMessage>
+</ValidationRule>

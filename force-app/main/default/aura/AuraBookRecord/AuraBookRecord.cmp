@@ -1,0 +1,7 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction,lightning:isUrlAddressable,lightning:actionOverride" access="global" >
+
+    <aura:attribute name="inputValue" type="String"/>
+    <Lightning:card>
+      <c:demoBookReocrd onpagereload="{!c.refresh}"/>
+    </Lightning:card>
+</aura:component>

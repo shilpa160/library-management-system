@@ -1,0 +1,13 @@
+<template>
+    <h2> Book Datatable</h2>
+    <br><lightning-input type="text" label="Search" value={searchTerm} onchange={handleSearch}></lightning-input>
+</br>
+    <template if:true={bookListPopulated}>
+        <c-custom-l-w-c-for-books data={convertedBookList} columns={columns}  key-field="bookid" hide-checkbox-column="true" onrowaction={handleRowAction}>
+        </c-custom-l-w-c-for-books>
+    </template>
+    <template if:true={error}>
+        {error}
+    </template>
+   
+</template>
