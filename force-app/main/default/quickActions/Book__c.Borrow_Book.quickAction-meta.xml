@@ -8,7 +8,7 @@
         <field>Borrowed_Date__c</field>
         <formula>TODAY()</formula>
     </fieldOverrides>
-    <label>Borrow Book</label>
+    <label>Borrow Request</label>
     <optionsCreateFeedItem>true</optionsCreateFeedItem>
     <quickActionLayout>
         <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
